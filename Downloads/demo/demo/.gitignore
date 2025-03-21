@@ -1,0 +1,16 @@
+node_modules/
+.vscode/
+*.log
+*.exe
+*.dat
+*.ini
+*.bat
+*.lock
+NTUSER.*
+Application Data/
+Cookies/
+Documents/
+Modèles/
+Recent/
+SendTo/
+Voisinage*/
