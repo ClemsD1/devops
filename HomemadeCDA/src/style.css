@@ -1,0 +1,110 @@
+:root {
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: #1a1a1a;
+  background-color: #f4f9ff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #348feb;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #2a6fc3;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background: linear-gradient(to right, #eef3fb, #e6f0ff);
+  color: var(--text);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+h1 {
+  font-size: 3em;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+}
+
+button {
+  border-radius: 12px;
+  border: none;
+  padding: 0.75em 1.5em;
+  font-size: 1em;
+  font-weight: 600;
+  font-family: inherit;
+  background-color: #348feb;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.25s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #2a6fc3;
+  transform: translateY(-2px);
+}
+
+button:focus,
+button:focus-visible {
+  outline: 3px solid rgba(52, 143, 235, 0.4);
+}
+
+.card {
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  margin: 2rem;
+  max-width: 600px;
+  width: 100%;
+}
+
+#app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: #e4e4e4;
+    background-color: #10131a;
+  }
+
+  a:hover {
+    color: #90c7ff;
+  }
+
+  button {
+    background-color: #1e2a38;
+    color: #90c7ff;
+  }
+
+  body {
+    background: linear-gradient(to right, #1b1e26, #10131a);
+  }
+
+  .card {
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  }
+}
